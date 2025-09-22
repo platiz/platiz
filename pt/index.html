@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; img-src 'self' data: https://api.qrserver.com; font-src 'self' https://cdnjs.cloudflare.com; connect-src 'self' https://api.emailjs.com; frame-src https://www.google.com;">
+  <title>Emanuel Laranjo - CV Profissional</title>
+  <meta name="description"
+    content="Emanuel Laranjo, Developer e Administrador Zoho CRM, especializado em automação e integrações API para otimizar processos comerciais." />
+  <meta name="keywords"
+    content="Emanuel Laranjo, CRM Developer, Zoho CRM, Integrações API, Automação, Desenvolvimento Deluge" />
+  <meta name="author" content="Emanuel Laranjo" />
+  <!-- FontAwesome para ícones sociais -->
+
+  <!-- Link para o CSS externo (só depois preencherás este ficheiro) -->
+  <link rel="stylesheet" href="../css/styles.min.css" />
+  <!-- <link rel="stylesheet" href="css/test.css" />-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+  <div class="page-wrapper">
+  <div id="welcomeScreen" style="
+    position: fixed; top:0; left:0; width:100vw; height:100vh; 
+    background: linear-gradient(120deg, #00334e, #026a6a 70%, #12495b); 
+    color: #fff; display:flex; flex-direction: column; align-items: center; justify-content: center; z-index: 2000;">
+    <img srcset="../images/Profile.webp" alt="Foto do Emanuel Laranjo" style="
+      border-radius: 50%; width: 150px; height: 150px; object-fit: cover; margin-bottom: 1rem;" />
+    <div class="title-wrapper" style="
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center;
+  width: 100%;">
+      <h2>
+        Bem vindo! O meu nome é
+      </h2>
+      <h1> Emanuel Laranjo</h1>
+    </div>
+    <p style="font-size: 1.5rem; margin-bottom: 2rem;">Preparado para iniciar?</p>
+    <button type="button" id="startButton" style="
+      padding: 12px 36px; font-size: 1.3rem; border-radius: 30px; 
+      border:none; background-color: #2491b6; color: white; 
+      cursor: pointer; box-shadow: 0 6px 12px rgba(0,170,255,0.6); 
+      transition: background-color 0.3s ease;">Sim</button>
+    <br>
+    <div id="loadingGame"
+      style="display: none; margin-top: 20px; gap: 6px; display: none; justify-content: center; align-items: center;">
+      <div class="game-bar"></div>
+      <div class="game-bar"></div>
+      <div class="game-bar"></div>
+      <div class="game-bar"></div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <header aria-label="Cabeçalho com nome e resumo profissional" class="header-main">
+    <img srcset="../images/Profile.webp" alt="Foto profissional Emanuel Laranjo" class="header-photo" />
+    <h1>Emanuel Laranjo</h1>
+    <p>Especialista em CRM e Automação de Processos | Caetano Retail</p>
+
+    <div class="scroll-tip" aria-hidden="true" role="presentation">
+      <span>Clique para descobrir mais</span>
+      <div class="arrow-wrapper">
+        <div class="arrow-down"></div>
+      </div>
+    </div>
+  </header>
+
+  <nav role="navigation" aria-label="Menu principal" class="nav-main">
+    <a href="#about" class="nav-link active">Resumo</a>
+    <a href="#timeline" class="nav-link">Linha do Tempo</a>
+    <a href="#skills" class="nav-link">Competências</a>
+    <a href="#projects" class="nav-link">Projetos</a>
+    <a href="#contact" class="nav-link" hidden>Contacto</a>
+  </nav>
+
+  <main>
+    <section id="about" tabindex="0" aria-labelledby="title-about" class="section-main">
+      <h2 id="title-about">Resumo Profissional</h2>
+      <p>
+        Profissional de CRM e desenvolvimento de soluções tecnológicas com vasta experiência em automação de processos,
+        integração de APIs e personalização de sistemas CRM, especialmente Zoho CRM. Hábil na criação de
+        funcionalidades, manutenção de sistemas e desenvolvimento de dashboards dinâmicos para monitorização de
+        desempenho com Power BI e Zoho Analytics. Experiência consolidada em otimização de processos operacionais e na
+        gestão estratégica de CRM, apoiando decisões alinhadas aos objetivos de negócio. Competências técnicas incluem
+        programação em C#, .NET, Python, PHP, Deluge, SQL, MySQL, além de uso de ferramentas como Zapier, Microsoft
+        Power Automate e plataformas SuiteCRM e SugarCRM. Atuei em diversos setores, destacando-me pela capacidade de
+        inovação tecnológica e melhoria contínua dos sistemas com foco em resultados.
+      </p>
+    </section>
+
+    <section id="timeline" tabindex="0" aria-labelledby="title-timeline" class="section-main">
+      <h2 id="title-timeline">Linha do Tempo Profissional</h2>
+      <div class="timeline" aria-label="Linha do tempo com evolução profissional">
+        <article>
+          <br>
+          <h3>Caetano Retail</h3>
+          <span>Outubro 2023 - presente</span>
+          <p>Integro a equipa de Desenvolvimento de Negócios, onde otimizamos processos automáticos, implemento
+            inovações tecnológicas, colaboro na estratégia de CRM e desenvolvo dashboards para monitorização. O meu foco
+            reside em criar melhorias e customizações no Zoho CRM, automatizar integrações com Zapier e Microsoft Power
+            Automate. Além disso, desenvolvo e implemento integrações API. </p>
+        </article>
+        <article>
+          <br>
+          <h3>ALTA Digital</h3>
+          <span>Abril 2023 - Outubro 2023</span>
+          <p>Desenvolvi funcionalidades e resolvi bugs em CRM, gerei processos de melhoria e integrei sistemas via APIs
+            RESTful em plataformas SuiteCRM e SugarCRM.</p>
+        </article>
+        <article>
+          <br>
+          <h3>MDS Group - Período de 1,5 anos como Outsourcer via PrimeIT</h3>
+          <span>Outubro 2018 - Março 2023</span>
+          <p>Desenvolvi funcionalidades em PHP, C# e JavaScript. Manutenção corretiva e evolutiva de sistemas CRM.
+            Colaboração na definição estratégica de CRM e desenvolvimento de integrações API para garantir fluxo eficaz
+            de dados. Também criei relatórios e análises para suportar decisões.</p>
+        </article>
+        <article>
+          <br>
+          <h3>Webow</h3>
+          <span>Setembro 2017 - Setembro 2018</span>
+          <p>Desenvolvi um CRM de raiz totalmente customizado e colaborei no backend de um projeto de Marketplace de
+            Smartphones, além de criar páginas institucionais. Trabalhei com tecnologias PHP, Symfony, MySQL e
+            JavaScript para construir soluções robustas e escaláveis.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" tabindex="0" aria-labelledby="title-skills" class="section-main">
+      <h2 id="title-skills">Competências Técnicas e Soft Skills</h2>
+      <ul class="skills-list" role="list" aria-label="Lista de competências técnicas">
+        <li tabindex="0" data-achievement="skill-1" class="skill-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <span class="flip-icon" aria-hidden="true" data-feather="refresh-cw"></span>
+              Administrador e Developer de CRM
+            </div>
+            <div class="card-back">
+              Experiência avançada em personalização, automação e integração API.
+            </div>
+          </div>
+        </li>
+        <li tabindex="0" data-achievement="skill-2" class="skill-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <span class="flip-icon" aria-hidden="true" data-feather="refresh-cw"></span>
+
+              Programação
+            </div>
+            <div class="card-back">
+              Deluge, Python, PHP, C#, JavaScript,SQL
+            </div>
+          </div>
+        </li>
+        <li tabindex="0" data-achievement="skill-3" class="skill-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <span class="flip-icon" aria-hidden="true" data-feather="refresh-cw"></span>
+
+              Automação e Integração
+            </div>
+            <div class="card-back">
+              Zapier, Microsoft Power Automate, APIs REST e SOAP
+            </div>
+          </div>
+        </li>
+        <li tabindex="0" data-achievement="skill-4" class="skill-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <span class="flip-icon" aria-hidden="true" data-feather="refresh-cw"></span>
+
+              Inteligência Artificial
+            </div>
+            <div class="card-back">
+              Assistentes de IA e integrações com serviços Gen AI
+            </div>
+          </div>
+        </li>
+        <li tabindex="0" data-achievement="skill-5" class="skill-item">Automação de Marketing</li>
+        <li tabindex="0" data-achievement="skill-6" class="skill-item">Gestão de Fluxos de Dados</li>
+        <li tabindex="0" data-achievement="skill-7" class="skill-card">
+          <div class="card-inner">
+            
+            <div class="card-front">
+              <span class="flip-icon" aria-hidden="true" data-feather="refresh-cw"></span>
+
+              Ferramentas Analíticas
+            </div>
+            <div class="card-back">
+              Power BI, Zoho Analytics, SQL Server Reporting Services
+            </div>
+          </div>
+        </li>
+        <li tabindex="0" data-achievement="skill-8" class="skill-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <span class="flip-icon" aria-hidden="true" data-feather="refresh-cw" ></span></span>
+
+              Bases de Dados
+            </div>
+            <div class="card-back">
+              MariaDB, MySQL, SQL Server
+            </div>
+          </div>
+        </li>
+      </ul>
+      <br>
+      <h3>Soft Skills</h3>
+      <ul class="softskills-list" role="list" aria-label="Lista de soft skills">
+        <li tabindex="0" data-achievement="softskill-1" class="skill-item">🚀 Proatividade</li>
+        <li tabindex="0" data-achievement="softskill-2" class="skill-item">🧩 Resolução de problemas</li>
+        <li tabindex="0" data-achievement="softskill-3" class="skill-item">🔄 Adaptabilidade</li>
+        <li tabindex="0" data-achievement="softskill-4" class="skill-item">🎯 Hiperfoco</li>
+      </ul>
+    </section>
+
+    <section id="projects" tabindex="0" aria-labelledby="title-projects" class="section-main">
+      <h2 id="title-projects">Galeria de Projetos</h2>
+      <div class="projects-gallery" role="list" aria-label="Galeria de projetos">
+        <article data-achievement="project-1" tabindex="0" class="project-card">
+          <img src="../images/CRM Integration.webp" alt="Integração entre CRM e diversas plataformas" />
+          <h3>Integração entre CRM e diversas plataformas</h3>
+          <p>Integrações e sincronizações automatizadas entre CRM e diversas plataformas.</p>
+        </article>
+        <article data-achievement="project-2" tabindex="0" class="project-card">
+          <img src="../images/Marketing Automation.webp" alt="Automação de emails " />
+          <h3>Automação de Emails </h3>
+          <p>Workflows dinâmicos e estáticos para melhoria no engajamento de clientes.</p>
+        </article>
+        <article data-achievement="project-3" tabindex="0" class="project-card">
+          <img src="../images/Data Analysis and Processing.webp" alt="Análise e tratamento avançado de dados CRM" />
+          <h3>Análise e Tratamento de Dados</h3>
+          <p>Limpeza e formatação avançada para garantir qualidade dos dados.</p>
+        </article>
+        <article data-achievement="project-4" tabindex="0" class="project-card">
+          <img src="../images/CRM Customization.webp" alt="Customizações de CRM's" />
+          <h3>Customizações de CRM's</h3>
+          <p>Manutenção corretiva e evolutiva de diversos CRM's.</p>
+        </article>
+        <article data-achievement="project-5" tabindex="0" class="project-card">
+          <img src="../images/AI Assistant.webp" alt="Assistentes de IA" />
+          <h3>Assistentes de IA</h3>
+          <p>Criação e integração de Assistentes de IA com CRM e outras plataformas.</p>
+        </article>
+        <article data-achievement="project-6" tabindex="0" class="project-card">
+          <img src="../images/Workflow Automation.webp" alt="Automação e Fluxos de Trabalho" />
+          <h3>Automação e Fluxos de Trabalho</h3>
+          <p>Desenvolvimento de Fluxos de Trabalho com objetivo de automaizar processos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" tabindex="0" aria-labelledby="title-contact" class="section-main" style="display:none;">
+      <h2 id="title-contact">Contacte-me</h2>
+      <form id="contactForm" aria-label="Formulário para contacto">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" placeholder="O seu nome" autocomplete="name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="email" required />
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" rows="5" placeholder="Escreva a sua mensagem aqui" required></textarea>
+        <div class="g-recaptcha" data-sitekey="6Le1n9ErAAAAAN_cU3czJkA4YNJU71ZmDVGGthkb"></div>
+        <button type="submit" class="submit-btn">Enviar</button>
+      </form>
+      <div class="qr-container" aria-label="Código QR para LinkedIn">
+        <a href="https://www.linkedin.com/in/emanuel-laranjo" target="_blank" rel="noopener noreferrer">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://www.linkedin.com/in/emanuel-laranjo"
+            alt="QR Code LinkedIn Emanuel Laranjo" />
+          <div class="qr-label">LinkedIn</div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <aside id="achievements" aria-label="Lista de conquistas desbloqueadas" class="achievements-sidebar">
+    <h3>Conquistas</h3>
+    <div id="achievementProgressBarWrapper" style="position: relative; width: 100%; height: 20px; margin-bottom: 16px;">
+      <div id="achievementProgressBarContainer" style="height: 100%;"></div>
+      <div id="achievementProgressText" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+              font-weight: 700; color: #1a6881; user-select: none; pointer-events: none; font-size: 1rem;
+              white-space: nowrap; width: 100%; text-align: center;">
+      </div>
+    </div>
+
+    <ul>
+      <li id="skill-1">🔧 Administrador e Developer de CRM</li>
+      <li id="skill-2">👨‍💻 Programação</li>
+      <li id="skill-3">🔌 Automação e Integração</li>
+      <li id="skill-4">🤖 Inteligência Artificial</li>
+      <li id="skill-5">📧 Automação de Marketing</li>
+      <li id="skill-6">🧹 Gestão de Fluxos de Dados</li>
+      <li id="skill-7">📊 Ferramentas Analíticas</li>
+      <li id="skill-8">🗃️ Bases de Dados</li>
+      <li id="softskill-1">🗣 Comunicação eficaz</li>
+      <li id="softskill-2">🧩 Resolução de problemas</li>
+      <li id="softskill-3">🔄 Adaptabilidade</li>
+      <li id="softskill-4">🎯 Hiperfoco</li>
+      <li id="project-1">⚙️ Integração entre CRM e diversas plataformas</li>
+      <li id="project-2">✉️ Automação de Email</li>
+      <li id="project-3">🔍 Análise & Tratamento Dados</li>
+      <li id="project-4">🛠 Customizações de CRM's</li>
+      <li id="project-5">🧠 Criação e integração de Assistentes de IA</li>
+      <li id="project-6">⏩ Automação e Fluxos de Trabalho</li>
+    </ul>
+    <div id="congratsMessage" role="alert" aria-live="assertive" class="congrats-message" hidden>
+      Parabéns! Já conhece o meu perfil, agora pode entrar em contacto comigo.
+    </div>
+    <a href="#contact" id="btnContact" role="button" tabindex="0" class="btn-contact">Contacte-me</a>
+  </aside>
+<footer aria-label="Rodapé com informações pessoais e links sociais" class="footer-main">
+    <p>© 2025 Emanuel Laranjo</p>
+    <div class="social-links" role="list" aria-label="Links para redes sociais profissionais">
+      <a href="https://www.linkedin.com/in/emanuel-laranjo" target="_blank" aria-label="LinkedIn de Emanuel Laranjo"
+        rel="noopener noreferrer"><i data-feather="linkedin"></i></a>
+      <a href="https://github.com/joaosilva" target="_blank" aria-label="GitHub de Emanuel Laranjo"
+        rel="noopener noreferrer"><i data-feather="github"></i></a>
+    </div>
+  </footer>
+  
+</div>
+
+
+</body>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/progressbar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+<!-- Import do JS externo -->
+<script src="../js/scripts.obfuscated.js"></script>
+<!-- <script src="js/tes.js"></script>-->
+
+</html>
